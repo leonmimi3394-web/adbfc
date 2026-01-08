@@ -3,7 +3,7 @@ import "firebase/compat/auth";
 import "firebase/compat/firestore";
 import "firebase/compat/analytics";
 
-// Firebase configuration for adbfc-earning
+// Firebase configuration with hardcoded values to ensure immediate stability
 const firebaseConfig = {
   apiKey: "AIzaSyCaUiV2XAhHglRYIFndPzMTy7SR5ADEQjA",
   authDomain: "adbfc-earning.firebaseapp.com",

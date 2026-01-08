@@ -1,7 +1,7 @@
 import { GoogleGenAI, GenerateContentResponse } from "@google/genai";
 import { Transaction } from '../types';
 
-// Initialize the Gemini AI client
+// Initialize the Gemini AI client using process.env.API_KEY as per strict guidelines
 export const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
 
 // Models

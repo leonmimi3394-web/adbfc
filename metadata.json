@@ -2,6 +2,8 @@
   "name": "Copy of  adbfc limited",
   "description": "A comprehensive dashboard for LED bulb business owners to track sales, calculate profits (Munafa), manage replacement costs, and leverage AI for business insights and image analysis.",
   "requestFramePermissions": [
-    "microphone"
+    "microphone",
+    "camera",
+    "geolocation"
   ]
 }

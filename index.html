@@ -13,11 +13,13 @@
       }
     </style>
     <script>
-      // Polyfill process.env for browser environments to prevent ReferenceErrors
-      // This acts as a fallback for the Vite define plugin
-      if (typeof process === 'undefined') {
-        window.process = { env: {} };
-      }
+      // Global polyfill for process.env to prevent "process is not defined" errors
+      // in third-party libraries (like Firebase or Gemini SDKs)
+      window.process = {
+        env: {
+          NODE_ENV: 'development' // or 'production' in build
+        }
+      };
     </script>
   <script type="importmap">
 {
